@@ -1,0 +1,86 @@
+:root {
+     --background: #ffffff;
+     --body-bg: #d0cdcd;
+     --black: #000000;
+     --black-light: #797676;
+     --yellow: #FFB400;
+     --orange: #fa7e1e;
+     --linkedin: #0072b1;
+     --red: #fe0000;
+}
+
+* {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+}
+
+body {
+     background-color: var(--body-bg);
+}
+
+.slider {
+     background-color: var(--background);
+     max-width: 300px;
+     height: 2000px;
+}
+
+.section-first {
+     text-align: center;
+
+}
+
+img {
+     width: 200px;
+     height: 210px;
+     margin-top: 20px;
+     border-radius: 50%;
+     border: 5px solid var(--red);
+}
+
+.titles{
+     margin-top: 10px;
+}
+.titles span{
+     margin: 3px;
+     display: inline-block;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: large;
+}
+
+.titles span{
+     text-transform: capitalize;
+}
+
+.titles span:nth-of-type(odd){
+     color: var(--black);
+}
+
+.titles span:nth-of-type(even){
+     color: var(--black-light);
+}
+
+.slider-icons{
+     margin-top: 4px;
+}
+
+.slider-icons i{
+     padding: 10px;
+     font-size: 18px;
+}
+
+.slider-icons i{
+     cursor: pointer;
+     font-size: 25px;
+     padding: 4px;
+     border: 2px solid black;
+}
+
+.slider-icons i:hover{
+     cursor: pointer;
+     font-size: 25px;
+     padding: 4px;
+     color: var(--red);
+     border-radius: 50%;
+     font-weight: bolder;
+}

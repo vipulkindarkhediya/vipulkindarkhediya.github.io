@@ -25,6 +25,9 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
+    <!-- Sweet Alert  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
@@ -470,12 +473,25 @@
     <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
     <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
 
+    <!-- Sweet Alert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+
     <!-- Contact Javascript File -->
     <script src="assets/mail/jqBootstrapValidation.min.js"></script>
     <script src="assets/mail/contact.js"></script>
 
     <!-- Template Javascript -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        window.onload = function () {
+            Swal.fire({
+                title: "Warning",
+                text: "Work in progress in the portfolio",
+                icon: "warning"
+            });
+        }
+    </script>
 </body>
 
 </html>

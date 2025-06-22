@@ -1,505 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Favicons -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.png">
-    <link rel="apple-touch-icon" href="assets/images/favicon/favicon.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/favicon.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/favicon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/favicon.png">
-
-    <meta name="author" content="Vipul Kindarkhediya">
-    <meta name="keywords" content="Laravel, PHP, Mysql, Back-end, Vipul Kindarkhediya">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Vipul Kindarkhediya</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.png"
+    />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/img/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/img/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/img/favicon.png"
+    />
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Sweet Alert  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="assets/css/style.css" rel="stylesheet">
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Port</span>Folio</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Education</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
-                <a href="#project" class="nav-item nav-link">Projects</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="tel:+919979220622" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+  <body class="index-page">
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="background-elements">
+          <div class="bg-circle circle-1"></div>
+          <div class="bg-circle circle-2"></div>
         </div>
-    </nav>
-    <!-- Navbar End -->
 
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
+        <div class="hero-content">
+          <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="assets/images/profile.JPG" alt="">
+              <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                <div class="hero-text">
+                  <h2>Vipul Kindarkhediya</h2>
+                  <p class="lead">
+                    I'm a
+                    <span
+                      class="typed"
+                      data-typed-items="Web Developer, Backend Developer"
+                    ></span>
+                  </p>
+                  <p class="description">
+                    I am a skilled PHP-Laravel developer with proven expertise
+                    in HTML, CSS, jQuery, MySQL, MongoDB, PHP, and Laravel. I am
+                    proficient in simplifying development tasks such as routing,
+                    authentication, sessions, and caching using the Laravel
+                    framework, and I am capable of building web applications
+                    that enhance the user experience.
+                  </p>
+
+                  <div class="hero-actions">
+                    <a
+                      target="_blank"
+                      href="tel:919979220622"
+                      class="btn btn-outline"
+                      >Get In Touch</a
+                    >
+                  </div>
+
+                  <div class="social-links">
+                    <a
+                      href="https://github.com/vipulkindarkhediya"
+                      target="_blank"
+                      title="GitHub"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/vipulkindarkhediya"
+                      target="_blank"
+                      title="Linkedin"
+                      ><i class="bi bi-linkedin"></i
+                    ></a>
+                    <a href="#" title="Twitter"
+                      ><i class="bi bi-twitter-x"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="mailto:v6vipul@gmail.com"
+                      title="Email"
+                      ><i class="bi bi-envelope"></i
+                    ></a>
+                  </div>
                 </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Vipul K.</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Web Developer, Backend Developer, API Developer, Php Developer, Laravel Developer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://drive.google.com/file/d/121LYVMXfv8zKo8S3cOccFn4ovKy4nfO1/view" target="_blank" class="btn btn-outline-light mr-5">View CV</a>
-                        <a href="tel:+919979220622" class="btn btn-outline-light mr-5">Hire Me</a>
+              </div>
+
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-visual">
+                  <div class="profile-container">
+                    <div class="profile-background"></div>
+                    <img
+                      src="assets/img/profile/profile2.png"
+                      alt="vipul Kindarkhediya"
+                      class="profile-image"
+                    />
+                    <div class="floating-elements">
+                      <div class="floating-icon icon-1">
+                        <i class="bi bi-palette"></i>
+                      </div>
+                      <div class="floating-icon icon-2">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="floating-icon icon-3">
+                        <i class="bi bi-lightbulb"></i>
+                      </div>
+                      <div class="floating-icon icon-4">
+                        <i class="bi bi-graph-up"></i>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Header End -->
+      </section>
+      <!-- /Hero Section -->
+    </main>
 
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-capitalize text-primary">About Me</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="assets/images/about5.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Backend Web Developer</h3>
-                    <p>I'm a proficient PHP-Laravel developer. He has proven expertise in easing development pains like routing, authentication, sessions and caching, and web app development through Laravel Framework with expertise in HTML, CSS, jQuery, MySQL, MongoDB, PHP, and Laravel, he is capable of building web applications to improve customer.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Vipul Kindarkhediya</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">6 August 2001</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Graduate</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary"><a href="tel:+919979220622">+919979220622</a></span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary"><a href="mailto:vipulkindarkhediya@gmail.com">v6vipul@gmail.com</a></span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary"><a href="https://maps.app.goo.gl/y1mhjSeVuGT6dAT39">Fulrama,Junagadh,Gujarat</a></span></h6></div>
-                    </div>
-                    <a href="tel:+919979220622" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="assets/resume/Vipul+Kindarkhediya+Resume.pdf" class="btn btn-outline-primary">Download CV</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Education</h1>
-                <h1 class="position-absolute text-capitalize text-primary">Education</h1>
-            </div>
-            <div class="align-items-center">
-                <div class="col-lg-12">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Graduation In BCA</h5>
-                            <p class="mb-2">
-                                <a href="https://www.bknmu.edu.in/" target="_blank">
-                                    <strong>UNIVERSITY - </strong>
-                                    <strong>Bhakta Kavi Narsinh Mehta University, Junagadh</strong>
-                                </a>
-                                |
-                                <a href="https://jmpaneracollege.co.in/" target="_blank">
-                                    <strong>COLLEGE - </strong>
-                                    <strong>Arts, Commerce & Computer Science College, Manavadar</strong>
-                                </a>
-                                |
-                                <small>2019 - 2022</small></p>
-                            <p>I recently completed my Bachelor of Computer Applications (BCA). Throughout the program, I gained a solid foundation in computer science, programming, and web development. I am excited to apply my knowledge and contribute to the tech industry, whether through further studies or starting my career in web development or IT.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">12<sup>th</sup> (Twelve) In Commerce</h5>
-                            <p class="mb-2">
-                                <a href="https://www.gsebeservice.com/" target="_blank">
-                                    <strong>BOARD - </strong>
-                                    <strong>Gujarat Secondary and Higher Secondary Education Board</strong>
-                                </a>
-                                |
-                                <a href="" target="_blank">
-                                    <strong>SCHOOL - </strong>
-                                    <strong>Shree M.K.Rajkotiya High Sschool, Balagam</strong>
-                                </a>
-                                |
-                                <small>2017 - 2018</small>
-                            </p>
-                                <p>I completed my 12th grade where I focused on [specific stream, e.g., Computer Science, Commerce,]. During my time in high school, I developed a strong foundation in subjects such as. In addition to academics, I actively participated in extracurricular activities, including [Sports, Computer Programming], which helped me build teamwork and leadership skills. I also completed various programs that honed my critical thinking and creativity. This experience has prepared me for my next steps, whether pursuing further education or exploring new opportunities in my chosen field. </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">10<sup>th</sup>(Ten) In Computer</h5>
-                            <p class="mb-2">
-                                <a href="https://www.gsebeservice.com/" target="_blank">
-                                    <strong>BOARD - </strong>
-                                    <strong>Gujarat Secondary and Higher Secondary Education Board</strong>
-                                </a>
-                                |
-                                <a href="" target="_blank">
-                                    <strong>SCHOOL - </strong>
-                                    <strong>Shree M.K.Rajkotiya High Sschool, Balagam</strong>
-                                </a>
-                                | <small>2015 - 2016</small></p>
-                            <p>I completed my 10th grade. During this foundational year, I gained a well-rounded education across key subjects. I also participated in various extracurricular activities, such as [Sports, Computer Programming, and Cultural events], which helped enhance my teamwork and leadership abilities. This experience laid the groundwork for my future studies and personal growth.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-capitalize text-primary">My Skills</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">PHP</h6>
-                            <h6 class="font-weight-bold">75%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">LARAVEL</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">GITHUB</h6>
-                            <h6 class="font-weight-bold">60%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">JAVASCRIPT</h6>
-                            <h6 class="font-weight-bold">50%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">JQUERY</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">MYSQL</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">GIT</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">GITLAB</h6>
-                            <h6 class="font-weight-bold">60%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skill End -->
-
-
-    <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Services</h1>
-                <h1 class="position-absolute text-capitalize text-primary">My Services</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-lg-12 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Development</h4>
-                    </div>
-                    <p>I am skilled in web development, with a strong focus on creating dynamic, user-friendly websites. I am passionate about coding and continuously learning new technologies to improve my skills and deliver high-quality web solutions.                    </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-12 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">API Development</h4>
-                    </div>
-                    <p>I specialize in API development, focusing on creating robust and scalable RESTful APIs that facilitate seamless communication between applications. I am dedicated to following best practices in API development to create efficient, scalable, and user-friendly solutions.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-12 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Applications</h4>
-                    </div>
-                    <p>I specialize in developing web applications that are dynamic, user-centric, and scalable. I am passionate about building innovative web applications that meet user needs and provide exceptional experiences.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="project">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-                <h1 class="position-absolute text-capitalize text-primary">My Projects</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">PHP</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Laravel</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="assets/images/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="project">
-                                <i class="fa text-white font-weight-bold text-capitalize" style="font-size: 60px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">lapshop</i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="assets/images/footwear.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="project">
-                                <i class="fa text-white font-weight-bold text-capitalize" style="font-size: 60px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">footwear</i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-capitalize text-primary">Contact Me</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter your subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="tel" class="form-control p-4" id="contact" placeholder="Contact Number"
-                                    required="required" data-validation-required-message="Please enter your contact number" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="https://github.com/vipulkindarkhediya" target="_blank"><i class="fab fa-github" style='font-size:25px'></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/vipulkindarkhediya/" target="_blank"><i class="fab fa-linkedin-in" style='font-size:25px'></i></a>
-                <a class="btn btn-light btn-social mr-2" href="mailto:vipulkindarkhediya1204@gmail.com"><i class="fa fa-envelope" style="font-size: 25px;"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="tel:+919979220622"><i class="fa fa-phone" style="font-size: 25px;"></i></a>
-            </div>
-            <p class="m-0">&copy; <span class="text-white font-weight-bold text-capitalize">vipul kindarkhediya</span>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/lib/typed/typed.min.js"></script>
-    <script src="assets/lib/easing/easing.min.js"></script>
-    <script src="assets/lib/waypoints/waypoints.min.js"></script>
-    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Sweet Alert  -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="assets/mail/jqBootstrapValidation.min.js"></script>
-    <script src="assets/mail/contact.js"></script>
-
-    <!-- Template Javascript -->
+    <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
-
-    <script>
-        window.onload = function () {
-            Swal.fire({
-                title: "Warning",
-                text: "Work in progress in the portfolio",
-                icon: "warning",
-                iconColor: "red",
-                confirmButtonText: "Ok",
-                confirmButtonColor: "red",
-            })
-        }
-    </script>
-</body>
-
+  </body>
 </html>
